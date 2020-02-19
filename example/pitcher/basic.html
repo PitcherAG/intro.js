@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pitcher IntroJs Examples, Basic Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- You MUST include Fomantic before IntroJs -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.js"></script>
+
+    <!-- Add IntroJs styles -->
+    <link href="../../introjs.css" rel="stylesheet">
+    <link href="../../themes/introjs-pitcher.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="ui borderless menu" data-step="1" data-intro="This is a Fomantic menu!">
+    <div class="ui icon item">
+        <i class="large bars link icon"></i>
+    </div>
+    <div class="ui icon logo link item">
+        <i class="bordered inverted teal stripe s icon"></i> Fomantic-UI
+    </div>
+    <div class="ui dropdown icon item" tabindex="0">
+        Blog
+        <i class="dropdown icon" tabindex="0">
+            <div class="menu" tabindex="-1"></div>
+        </i>
+        <div class="menu" tabindex="-1">
+            <div class="item">
+                <i class="dropdown icon" tabindex="0">
+                    <div class="menu" tabindex="-1"></div>
+                </i>
+                <span class="text">New</span>
+                <div class="menu">
+                    <div class="item">Document</div>
+                    <div class="item">Image</div>
+                </div>
+            </div>
+            <div class="item">
+                Open...
+            </div>
+            <div class="item">
+                Save...
+            </div>
+            <div class="item">Edit Permissions</div>
+            <div class="divider"></div>
+            <div class="header">
+                Export
+            </div>
+            <div class="item">
+                Share...
+            </div>
+        </div>
+    </div>
+    <div class="custom link item">
+        Documentation
+        <i class="dropdown icon" tabindex="0">
+            <div class="menu" tabindex="-1"></div>
+        </i>
+    </div>
+    <div class="right menu">
+        <div class="ui right aligned category search item">
+            <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Search My GitHub Repos..." autocomplete="off">
+                <i class="search link icon"></i>
+            </div>
+            <div class="results"></div>
+        </div>
+    </div>
+</div>
+
+<div class="ui container">
+
+
+    <h1>Basic Usage</h1>
+    <p class="lead" data-step="4" data-intro="Another step.">This is the basic usage of IntroJs, with
+    <h2>data-step</h2> and <h2>data-intro</h2> attributes.</p>
+    <a class="ui primary button" href="javascript:void(0);" onclick="javascript:introJs().start();">Show me how</a>
+
+
+    <hr>
+
+    <div class="row">
+        <div class="span6" data-step="2" data-intro="Ok, wasn't that fun?" data-position='right'
+             data-scrollTo='tooltip'>
+            <h4>Section One</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci
+                faucibus. Phasellus nec metus purus.</p>
+
+            <h4>Section Two</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci
+                faucibus. Phasellus nec metus purus.</p>
+
+            <h4>Section Three</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci
+                faucibus. Phasellus nec metus purus.</p>
+        </div>
+
+        <div class="span6" data-step="3" data-intro="More features, more fun." data-position='left'>
+            <h4>Section Four</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci
+                faucibus. Phasellus nec metus purus.</p>
+
+            <h4>Section Five</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci
+                faucibus. Phasellus nec metus purus.</p>
+
+            <h4>Section Six</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci
+                faucibus. Phasellus nec metus purus.</p>
+
+        </div>
+    </div>
+
+    <hr>
+</div>
+<script type="text/javascript" src="../../intro.js"></script>
+</body>
+</html>

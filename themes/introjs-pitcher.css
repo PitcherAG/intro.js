@@ -1,0 +1,62 @@
+/*
+Theme for Pitcher AG
+for: IntroJs (https://github.com/usablica/intro.js)
+*/
+
+.introjs-helperLayer,
+.introjs-tooltip {
+  border-radius: 8px;
+}
+
+.introjs-button {
+  font-family: 'Pitcher-Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background: none;
+  background-image: none;
+}
+
+.introjs-button:hover {
+  box-shadow: none;
+}
+
+.introjs-skipbutton,
+.introjs-skipbutton.introjs-donebutton {
+  float: left;
+  border: none;
+  border-radius: .28571429rem
+}
+
+.introjs-prevbutton {
+border-radius: .28571429rem 0 0 .28571429rem;
+}
+.introjs-prevbutton:before {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f104";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 5px;
+}
+
+.introjs-nextbutton {
+  border-radius: 0 .28571429rem .28571429rem 0;
+}
+.introjs-nextbutton:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f105";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 5px;
+}
+
+.introjs-helperNumberLayer {
+  font-family: 'Pitcher-Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background: rgba(75,75,75,1);
+  text-shadow: none;
+}

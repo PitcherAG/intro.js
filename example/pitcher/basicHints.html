@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pitcher IntroJs Examples, Basic Hints Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- You MUST include Fomantic before IntroJs -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.js"></script>
+
+  <!-- Add IntroJs styles -->
+  <link href="../../introjs.css" rel="stylesheet">
+  <link href="../../themes/introjs-pitcher.css" rel="stylesheet">
+</head>
+
+  <body>
+
+  <div class="ui borderless menu">
+    <div class="ui icon item">
+      <i class="large bars link icon"></i>
+    </div>
+    <div class="ui icon logo link item">
+      <i class="bordered inverted teal stripe s icon"></i> Fomantic-UI
+    </div>
+    <div class="ui dropdown icon item" tabindex="0">
+      Blog
+      <i class="dropdown icon" tabindex="0">
+        <div class="menu" tabindex="-1"></div>
+      </i>
+      <div class="menu" tabindex="-1">
+        <div class="item">
+          <i class="dropdown icon" tabindex="0">
+            <div class="menu" tabindex="-1"></div>
+          </i>
+          <span class="text">New</span>
+          <div class="menu">
+            <div class="item">Document</div>
+            <div class="item">Image</div>
+          </div>
+        </div>
+        <div class="item">
+          Open...
+        </div>
+        <div class="item">
+          Save...
+        </div>
+        <div class="item">Edit Permissions</div>
+        <div class="divider"></div>
+        <div class="header">
+          Export
+        </div>
+        <div class="item">
+          Share...
+        </div>
+      </div>
+    </div>
+    <div class="custom link item">
+      Documentation
+      <i class="dropdown icon" tabindex="0">
+        <div class="menu" tabindex="-1"></div>
+      </i>
+    </div>
+    <div class="right menu">
+      <div class="ui right aligned category search item">
+        <div class="ui icon input">
+          <input class="prompt" type="text" placeholder="Search My GitHub Repos..." autocomplete="off">
+          <i class="search link icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+    </div>
+  </div>
+
+    <div class="ui container">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right" data-hint="Get it, use it." data-position="bottom-left-aligned">
+          <li><a href="https://github.com/usablica/intro.js/tags"><i class='icon-black icon-download-alt'></i> Download</a></li>
+          <li><a href="https://github.com/usablica/intro.js">Github</a></li>
+          <li><a data-hint="Tweet at me" data-position="right" href="https://twitter.com/usablica">@usablica</a></li>
+        </ul>
+        <h3 class="muted">
+          <span data-hint="Nice to meet you" data-position="bottom">Intro.js</span>
+        </h3>
+      </div>
+
+      <hr>
+
+        <h1 data-hint="This is a tooltip!" data-hintPosition="top-middle" data-position="top-right-aligned">Hints</h1>
+        <p class="lead">Add hints using <h2>data-hint</h2> attribute.</p>
+        <a class="ui primary button" href="javascript:void(0);" onclick="javascript:introJs().addHints();">Add hints</a>
+
+      <hr>
+
+      <div class="row">
+        <div class="span6">
+          <h4>Section One</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci faucibus. Phasellus nec metus purus.</p>
+
+          <h4>Section Two</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci faucibus. Phasellus nec metus purus.</p>
+
+          <h4>Section Three</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci faucibus. Phasellus nec metus purus.</p>
+          </div>
+
+        <div class="span6">
+          <h4>Section Four</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci faucibus. Phasellus nec metus purus.</p>
+
+          <h4>Section Five</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci faucibus. Phasellus nec metus purus.</p>
+
+          <h4>Section Six</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci faucibus. Phasellus nec metus purus.</p>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <button 
+            type="button"
+            role="button"
+            data-hint="Left align" 
+            data-hintPosition="top-middle" 
+            data-position="bottom"
+            class="btn btn-default">Left</button>
+          <button 
+            type="button"
+            role="button"
+            data-hint="Middle align" 
+            data-hintPosition="top-middle" 
+            data-position="bottom"
+            class="btn btn-default">Middle</button>
+          <button 
+            type="button"
+            role="button"
+            data-hint="Right align" 
+            data-hintPosition="top-middle" 
+            data-position="bottom"
+            class="btn btn-default">Right</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../intro.js"></script>
+  </body>
+</html>
